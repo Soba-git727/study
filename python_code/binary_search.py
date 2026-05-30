@@ -1,4 +1,3 @@
-
 def binary_search(low,high,condition):
     while low<=high:
         mid=(low+high)//2
