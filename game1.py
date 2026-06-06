@@ -1,5 +1,6 @@
 import random
 import sys
+import re
 n=str(input("what's your name:"))
 print("good luck",n)
 worlds=[
@@ -47,11 +48,17 @@ while turn >0:
             print("_")
     if true == len(word):
                 print ("you win")
-                print ( "the word is ",word)
+                print ( "the word is",word)
                 sys.exit(2)
+    while True:    
+        guessed=input("choose a char:").lower()
+        if re.search(r"^[a-z]{1}$",guessed):
+            answer+=guessed
+            break
+        else:
+            print("only choose 1 character")
+
         
-    guessed=input("choose a char:").lower()
-    answer+=guessed
     multiple_correct_choices=word.count(guessed)
     
     if guessed in word:
@@ -65,6 +72,7 @@ while turn >0:
         
     if turn == 0:
         print("you losed")
+        print("the word is",word)
         sys.exit(1)
     
         
