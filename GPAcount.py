@@ -7,8 +7,8 @@ while True:
     while True:
         try:
             QTH=float(input("Diem qua trinh hoc: "))
-            THI=float(input("Diem thi:"))
-            TINCHI=int(input("Tin chi mon hoc"))
+            THI=float(input("Diem thi: "))
+            TINCHI=int(input("Tin chi mon hoc: "))
             break
         except ValueError:
             print("ERROR, please try again")
@@ -39,9 +39,7 @@ while True:
         #in ket qua
         if ask =="yes":
             print("GPA cua ban la: ",diemtichluy/tinchitichluy)
-            print("TIN CHI TICH Luy",tinchitichluy)
-            print("diem tich luy :",diemtichluy)
-            print("tong",TONG)
+            print("TONG TIN CHI DAT DUOC:",tinchitichluy)
             break
         else:
             raise("ERROR")
