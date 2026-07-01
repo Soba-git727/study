@@ -1,4 +1,3 @@
-from re import search
 tinchitichluy=0
 diemtichluy=0
 
