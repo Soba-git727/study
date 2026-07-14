@@ -99,8 +99,8 @@ body
 .word
 {
     position:absolute;
-    left:140px;
-    top:250px;
+    left:121px;
+    top: 270px;
     font-size: 1.9rem; 
     font-family:'Nunito', sans-serif;
     font-weight: 400;
