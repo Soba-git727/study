@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@700&display=swap');
+body
+{
+    overflow-x: hidden;
+}
+#bg
+{
+    background-image: url(feet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+    
+}
+
+.container
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.border
+{
+    
+    display:flex;
+    border: 1px white;
+    width:900px;
+    height:800px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    border-radius: 20px;
+    background:rgba(15, 22, 28, 0.75);
+}
+.border::before
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+}
+
+.gif
+{   
+    position: fixed;
+    left:0;
+    bottom:0;
+
+}
+#avatar
+{
+    position: absolute;
+    top:0;
+    bottom:20%;
+    background-image: url(images.jpg);
+    border:8px solid cyan;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    
+
+    background-size: cover;
+
+}
+.center
+{
+    display: flex;
+    min-width: 500px;
+    justify-content: center;
+}
+.name
+{
+    position:absolute;
+    top:197px;
+    display:flex;
+    min-width: 500px;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:#39c5bb;
+    text-shadow: 0px 0px 30px skyblue;
+    text-shadow: 0px 0px 40px skyblue;
+    text-shadow: 0px 0px 50px skyblue;
+    text-shadow: 0px 0px 60px skyblue;
+    font-family:'Quicksand', sans-serif;
+    
+    
+}
+.word 
+{
+    position:absolute;
+    left:121px;
+    top: 270px;
+    font-size: 1.9rem; 
+    font-family:'Nunito', sans-serif;
+    font-weight: 400;
+    color:#e2e8f0;
+    line-height: 2rem;
+}
+#discord
+{
+    border:2px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("disc.png");
+    background-size: cover;
+    position:absolute;
+    bottom: 50px;
+    left:120px;
+    opacity: 0.5;
+}
+#facebook
+{
+    border:2px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("Facebook.png");
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    bottom: 50px;
+    left:400px;
+    
+}
+#github
+{
+    border:2px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("github.png");
+    background-size:cover;
+    background-position: center;
+    position:absolute;
+    bottom: 50px;
+    left:700px;
+    
+}
+.social-icons
+{
+    position: absolute;
+    bottom:40px;
+    width: 800px;
+    height: 90px;
+    display:flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    text-decoration: none;
+      
+}
+.social-icons a
+{color:#39c5bb 
+}
