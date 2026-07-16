@@ -12,7 +12,7 @@ while True:
             THI=float(input("Diem thi: "))
             TINCHI=int(input("Tin chi mon hoc: "))
             break
-        except (ValueError, KeyboardInterrupt) :
+        except (ValueError, KeyboardInterrupt,OverflowError): 
             print("ERROR, please try again")
     #Tinh toan
     if QTH >=0 and THI>=0 and TINCHI>0:
@@ -32,7 +32,7 @@ while True:
             TONG=1.5
         elif TONG>=4.0:
             TONG=1.0
-        elif TONG >4.0:
+        elif TONG >0:
             TONG=0
         DIEM=(TONG*TINCHI)
         diemtichluy=diemtichluy+DIEM
