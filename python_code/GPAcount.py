@@ -16,7 +16,7 @@ while True:
             print("ERROR, please try again")
     #Tinh toan
     if QTH >=0 and THI>=0 and TINCHI>0:
-        tinchitichluy=tinchitichluy+TINCHI
+        tinchitichluy+=TINCHI
         TONG =(QTH + THI)/2
         if TONG >= 8.5:
             TONG=4.0
@@ -60,4 +60,4 @@ while True:
 
     else:
         print("ERROR,please try again")
-input("--press anything to close--\n")
+input("duoc lam boi Ho Hai Dang Nhom 11\n")
