@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- đặt trước </body> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<header class="navbar navbar-expand-lg navbar-dark" style="background:#0e2148;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">TechShop</a>
+    <div class="navbar-nav">
+      <a class="nav-link" href="#">Trang chủ</a>
+      <a class="nav-link" href="#products">Sản phẩm</a>
+      <a class="nav-link" href="#">Liên hệ</a>
+    </div>
+  </div>
+</header>
+
+<main class="container my-4">
+  <div class="row g-4">
+    <!-- cột sản phẩm chiếm 9/12 -->
+    <div class="col-lg-9" id="products">
+      <h2 class="mb-3">Sản phẩm nổi bật</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/sp1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Laptop Dell XPS 13</h5>
+              <p class="card-text small text-muted">Ultrabook 13.4".</p>
+              <span class="fw-bold text-primary">28.990.000 đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/sp2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chuột Logitech MX</h5>
+              <p class="card-text small text-muted">Không dây, pin 70 ngày.</p>
+              <span class="fw-bold text-primary">1.890.000 đ</span>
+            </div>
+          </div>
+        </div>
+        <!-- thêm .col khác tương tự -->
+      </div>
+    </div>
+    <!-- sidebar chiếm 3/12 -->
+    <aside class="col-lg-3">
+      <h2 class="mb-3">Kết nối</h2>
+      <ul class="list-unstyled">
+        <li class="mb-2"><i class="fa-brands fa-facebook text-primary"></i> Facebook</li>
+        <li class="mb-2"><i class="fa-brands fa-x-twitter"></i> Twitter</li>
+        <li class="mb-2"><i class="fa-brands fa-instagram"></i> Instagram</li>
+        <li class="mb-2"><i class="fa-brands fa-linkedin text-primary"></i> LinkedIn</li>
+      </ul>
+    </aside>
+  </div>
+</main>
+
+<!-- Footer 3 cột -->
+<footer class="text-light py-4 mt-4" style="background:#0e2148;">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5>Về TechShop</h5>
+        <p class="small mb-0">Cửa hàng công nghệ uy tín từ 2010.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Liên hệ</h5>
+        <p class="small mb-0">1900 1234<br>hello@techshop.vn</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Chính sách</h5>
+        <p class="small mb-0">Bảo hành · Đổi trả · Vận chuyển</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<body>
+   
+</body>
+</html>
