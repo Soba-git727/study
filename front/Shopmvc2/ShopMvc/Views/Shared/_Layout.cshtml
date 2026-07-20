@@ -1,0 +1,56 @@
+﻿@* LAYOUT CHUNG CHO MỌI TRANG — dùng lại nguyên bản Bootstrap ở Bài 1 (mục 1.6) *@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - TechShop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <!-- NAVBAR: y nguyên bản Bootstrap Bài 1 (navbar-expand-lg + navbar-dark) -->
+    <header class="navbar navbar-expand-lg navbar-dark" style="background:#0e2148;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">TechShop</a>
+            <div class="navbar-nav">
+                <a class="nav-link" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                <a class="nav-link" asp-controller="Product" asp-action="Index">Sản phẩm</a>
+                <a class="nav-link" asp-controller="Home" asp-action="Privacy">Liên hệ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- NỘI DUNG TRANG: mỗi View (Index, Create, Edit...) sẽ render vào đây -->
+    <main class="container my-4">
+        @RenderBody()
+    </main>
+
+    <!-- FOOTER 3 CỘT: y nguyên bản Bootstrap Bài 1 (row + col-md-4) — tự responsive, không cần media -->
+    <footer class="text-light py-4 mt-4" style="background:#0e2148;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>Về TechShop</h5>
+                    <p class="small mb-0">Cửa hàng công nghệ uy tín từ 2010.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liên hệ</h5>
+                    <p class="small mb-0">Hotline: 1900 1234</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Chính sách</h5>
+                    <p class="small mb-0">Bảo hành · Đổi trả · Vận chuyển</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT: jQuery + Bootstrap bundle (đã có sẵn trong template MVC) -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
